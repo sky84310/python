@@ -1,0 +1,26 @@
+import time
+var_timer = False
+var_on = False
+compare_time = int
+count = 0
+while True:
+    if var_timer == False:
+        c_time = time.time()
+        compare_time = int(c_time)
+        var_timer = True      
+    else:
+        c_time = time.time()
+        current_time = int(c_time)
+        if var_on == False:
+            if current_time >= compare_time + 1:
+                compare_time = current_time 
+                var_on = True
+                a=a+1             
+    if a >= 5:
+        else:
+            c_time = time.time()
+            current_time = int(c_time)
+            if current_time >= compare_time + 1:
+                compare_time = current_time 
+                var_on = False
+                var_timer = False
